@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cocheteledirigido.MainActivity">
+
+    <ImageButton
+        android:id="@+id/upp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ariba" />
+
+    <ImageButton
+        android:id="@+id/left"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/upp"
+        android:layout_toStartOf="@+id/upp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/izquierda" />
+
+    <ImageButton
+        android:id="@+id/down"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/left"
+        android:layout_toEndOf="@+id/left"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/abajo" />
+
+    <ImageButton
+        android:id="@+id/right"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/upp"
+        android:layout_toEndOf="@+id/upp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/derecha" />
+
+    <Button
+        android:id="@+id/iddesconectar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Desconectar" />
+
+</RelativeLayout>
